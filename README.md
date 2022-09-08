@@ -1,7 +1,16 @@
 # League Game
 
+## Test coverage
+
 ![Test coverage](./docs/assets/coverage.png)
-![Unit test](./docs/assets/unit-test.png.png)
+
+## Unit test
+
+![Unit test](./docs/assets/unit-test.png)
+
+## Class diagram
+
+![Class diagram](./docs/assets/class-diagram.png)
 
 ## Configurations
 
