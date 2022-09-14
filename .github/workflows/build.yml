@@ -16,9 +16,9 @@ jobs:
       - name: Install dependencies
         run: yarn
       - name: Test and coverage
-        run: yarn test:cov
+        run: yarn jest --coverage
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
         env:
-          GITHUB_TOKEN: b47beb65b5eb774b21ab38bcee62b83245b4b864
-          SONAR_TOKEN: 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
+          GITHUB_TOKEN: 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
+          SONAR_TOKEN: b47beb65b5eb774b21ab38bcee62b83245b4b864
