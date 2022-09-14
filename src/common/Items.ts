@@ -8,7 +8,7 @@ export enum ItemRole {
 
 export abstract class Items {
   role!: ItemRole;
-  name!: String;
+  name!: string;
   attributes!: Partial<Stats>;
 }
 
