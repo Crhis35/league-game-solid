@@ -3,7 +3,7 @@ const scanner = require('sonarqube-scanner');
 scanner(
   {
     serverUrl: 'https://sonarcloud.io',
-    token: 'b47beb65b5eb774b21ab38bcee62b83245b4b864',
+    token: '48864b2761b207a3a00a4a91d09a7f3daf90dc6f',
     options: {
       'sonar.projectName': 'dp_2p2022_t00057813_p1',
       'sonar.organization': 'iscodevutb',
