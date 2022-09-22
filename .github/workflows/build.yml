@@ -21,4 +21,4 @@ jobs:
         uses: SonarSource/sonarcloud-github-action@master
         env:
           GITHUB_TOKEN: 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
-          SONAR_TOKEN: b47beb65b5eb774b21ab38bcee62b83245b4b864
+          SONAR_TOKEN: 48864b2761b207a3a00a4a91d09a7f3daf90dc6f
