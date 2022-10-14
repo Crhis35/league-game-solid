@@ -1,7 +1,8 @@
 
 
-from games.league import LeagueGame
+from abstracts.character import Character
 
+Character.__abstractmethods__ = frozenset()
+cha = Character()
 
-game = LeagueGame(
-)
+cha.attack()

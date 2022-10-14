@@ -1,17 +1,12 @@
 
 
 from dataclasses import dataclass
-from typing import List
-from abstracts.character import Character
-from abstracts.gameoptions import GameOptions
-from pydantic import BaseModel
+
+from interfaces.game import IGame
+
 
 @dataclass
-class LeagueGame(BaseModel, GameOptions):
-    def init(self) -> None:
-        players: List[Character] = []
-        for character in self.teams:
-            for member in character.members:
-                players.append(member.character)
+class LeagueGame(IGame):
 
-        self.scene.apply(players)
+    def start(self) -> None:
+        print("Starting LeagueGame")

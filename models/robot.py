@@ -5,7 +5,7 @@ from interfaces.abilities import Hacker
 
 class Robot(Character, Hacker):
     def __init__(self, ) -> None:
-        super().__init__()
+        super().__init__("Robot")
         self.damage = 80
         self.magia = 0
         self.defense = 45

@@ -5,7 +5,7 @@ from interfaces.abilities import Fly
 
 class SuperHuman(Character, Fly):
     def __init__(self, ) -> None:
-        super().__init__()
+        super().__init__("SuperHuman")
         self.damage = 55
         self.magia = 10
         self.defense = 35

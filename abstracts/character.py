@@ -1,5 +1,6 @@
 
 from abc import ABC, abstractmethod
+from dataclasses import dataclass
 from typing import List, Optional
 from interfaces.Item import Item
 
@@ -11,17 +12,11 @@ class CharacterICharacter:
     level: int
 
 
+@dataclass
 class Character(ABC, Stats):
     name: str
     level: int = 1
-    health: int
-    speed: int
-    damage: int
-    defense: int
-    magia: int
-    move: int
-    mana: int
-    items: Optional[List[Item]] = []
+    items: Optional[List[Item]] = None
 
     @abstractmethod
     def attack() -> int:

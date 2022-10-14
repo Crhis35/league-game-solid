@@ -5,7 +5,7 @@ from interfaces.abilities import Magic
 
 class Alien(Character, Magic):
     def __init__(self, ) -> None:
-        super().__init__()
+        super().__init__("Alien")
         self.damage = 50
         self.magia = 25
         self.defense = 35

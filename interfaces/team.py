@@ -1,12 +1,13 @@
 
+from dataclasses import dataclass
 from typing import List, Optional
 
-from pydantic import BaseModel
 
 from models.player import Player
 
 
-class Team(BaseModel):
+@dataclass
+class Team:
     name: str
     members: List[Player]
     score: float

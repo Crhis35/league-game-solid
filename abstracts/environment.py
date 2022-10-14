@@ -3,9 +3,12 @@
 from abc import ABC, abstractmethod
 from typing import List
 
+from attr import dataclass
+
 from abstracts.character import Character
 
 
+@dataclass
 class Environment(ABC):
     name: str
     advantages: float

@@ -5,7 +5,7 @@ from interfaces.abilities import Shooter
 
 class Human(Character, Shooter):
     def __init__(self, ) -> None:
-        super().__init__()
+        super().__init__("Human")
         self.damage = 80
         self.magia = 0
         self.defense = 45
